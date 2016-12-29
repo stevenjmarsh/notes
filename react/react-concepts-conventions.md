@@ -36,3 +36,10 @@
         + https://facebook.github.io/react/docs/component-api.html#setstate
         + http://stackoverflow.com/questions/35867038/what-the-difference-of-this-state-and-this-setstate-in-reactjs
      
+## Design Patterns
+### Presentational Components
+* normal react components, primary purpose is for presentation 
+    - typically does not collect data 
+    - best practice is to be a pure function
+* typically functional stateless components
+    - unless need to use local state, or lifecycle methods, then convert to react class
