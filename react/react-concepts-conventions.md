@@ -43,3 +43,8 @@
     - best practice is to be a pure function
 * typically functional stateless components
     - unless need to use local state, or lifecycle methods, then convert to react class
+### State (Flux / Redux)
+* Redux: Three Principles
+    - Single Source of Truth (state stored in an object tree within a single store)
+    - State is read-only (must emit an action to change state)
+    - Changes are made with pure functions (using pure reducer functions)
