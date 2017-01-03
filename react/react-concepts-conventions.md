@@ -43,6 +43,8 @@
     - best practice is to be a pure function
 * typically functional stateless components
     - unless need to use local state, or lifecycle methods, then convert to react class
+### Container Components
+* provide data and behavior to presentational components
 ### State (Flux / Redux)
 * Redux: Three Principles
     - Single Source of Truth (state stored in an object tree within a single store)
