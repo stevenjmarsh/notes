@@ -50,3 +50,6 @@
     - Single Source of Truth (state stored in an object tree within a single store)
     - State is read-only (must emit an action to change state)
     - Changes are made with pure functions (using pure reducer functions)
+
+## Best Practices / Coding Patterns
+* [Binding methods of classes, to preserve `this` context.](https://medium.com/@rjun07a/binding-callbacks-in-react-components-9133c0b396c6)
