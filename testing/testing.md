@@ -84,4 +84,5 @@
 * to access the mongo shell, while running test for --full-app...
     - `mongo meteor --port 3001`
     - https://forums.meteor.com/t/hint-access-to-mongo-shell-when-testing/32621
-* 
+* if testing meteor accounts, using createUser and logout, be aware that Meteor.logout() is asynchronous, and logout may not be complete by the time the next line of code is called.
+    - In one case I passed done() to Meteor.logout's callback to make sure it was complete. (inside a test)
