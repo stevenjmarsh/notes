@@ -79,3 +79,9 @@
     * when collection2 cleans an object, it modifies the original object (does not create a new copy)
 * TAKE-AWAY: if, in testing, you want to make sure your schemas and test code are up to date, consider explicitly calling validate in the test. that way if it fails, you know you need to update the schema (or Factory definition) needs to be updated
     * this is a practice of keeping Factory.define in sync with a simple schema defintion, without having to keep Factory in production code (like the Meteor Todos example)
+
+### Notes - general
+* to access the mongo shell, while running test for --full-app...
+    - `mongo meteor --port 3001`
+    - https://forums.meteor.com/t/hint-access-to-mongo-shell-when-testing/32621
+* 
