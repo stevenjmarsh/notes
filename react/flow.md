@@ -19,6 +19,8 @@
     - include header at top of file 
     - broad libdef or type annotation definitions: essentially wild card something
     - ingnore next line with FlowFixMe comment
+* I have had cases where it has taken 10 minutes to write working code, and over two hours to correct the flow errors. (more than once)
+    - this dawned on me, when I was reading github issues, and someone else made that same comment.
 
 ## Resources
 
