@@ -1,4 +1,9 @@
 # Flow notes
+## Intro 
+* the value get from flow, or how much you like it does depend on how well you know javascript & react
+    - I am novice to intermediate, still feeling pain
+* one value, you learn javascript and react, the language and typing
+* second value, directly prevents some errors (especially those hard to find)
 
 ## Pros 
 * type checking...
