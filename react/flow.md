@@ -18,11 +18,13 @@
     - it's somewhat nice in that it integrates nicely with many editors
     - however, although configurable, it can be more strict than flow 
         + e.g., flow recognizes render, eslint flow does not, and you can't specifically suppress return type warning for just render 
+    - eslint and flow can have conflicts
+        + eslint react stated a method should be static, flow didn't recognize a static as an annotated property (no matter which direction you went, you would get an error -I ffm'd it.)
 * there are many times I curse flow for saying I have the wrong type, and I think it's unnecessary at that line, but turns out I made a mistake
     - ie, flow complained an element didnt' have value property, I had incorrectly typed the element as an htmldivelement, which indeed does not have a value
 * Ways to check or not check 
-    - include header at top of file 
-    - broad libdef or type annotation definitions: essentially wild card something
+    - include or exclude flow header at top of file 
+    - broad libdef or type annotation definitions: essentially wild card something (any, *)
     - ingnore next line with FlowFixMe comment
 * I have had cases where it has taken 10 minutes to write working code, and over two hours to correct the flow errors. (more than once)
     - this dawned on me, when I was reading github issues, and someone else made that same comment.
