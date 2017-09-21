@@ -20,6 +20,8 @@
         + e.g., flow recognizes render, eslint flow does not, and you can't specifically suppress return type warning for just render 
     - eslint and flow can have conflicts
         + eslint react stated a method should be static, flow didn't recognize a static as an annotated property (no matter which direction you went, you would get an error -I ffm'd it.)
+    - flow: if you provide a default prop for prop, flow understands it is optional
+        + I _think_ eslint will list errors required prop missing
 * there are many times I curse flow for saying I have the wrong type, and I think it's unnecessary at that line, but turns out I made a mistake
     - ie, flow complained an element didnt' have value property, I had incorrectly typed the element as an htmldivelement, which indeed does not have a value
 * Ways to check or not check 
