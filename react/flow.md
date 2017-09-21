@@ -28,6 +28,12 @@
     - ingnore next line with FlowFixMe comment
 * I have had cases where it has taken 10 minutes to write working code, and over two hours to correct the flow errors. (more than once)
     - this dawned on me, when I was reading github issues, and someone else made that same comment.
+* Flow does seem to be updating docs and providing examples rapidly and thoroughly. If you have an issue, bypass / work around it, and check back with Flow later.
+
+__NOTE:__ some packages (e.g. redux-form) provide __first class support for flow__. Flow types are automatically included with the package, typically in node_modules *.js.flow files. Note, if you ingore that folder in .flowconfig, those files will (or may) not read by flow.  Caveat, inlcuding node_modules can also generate a lot of flow errors. Need to figure this out.
+
+https://github.com/facebook/flow/issues/1548
+
 
 ## Resources
 
