@@ -1,7 +1,11 @@
 # Flow notes
+
+slide show: https://slides.com/stevemarsh/type-checking-with-flow/edit
+
 ## Intro 
+* how many here use flow?  typescript?
 * the value get from flow, or how much you like it does depend on how well you know javascript & react
-    - I am novice to intermediate, still feeling pain
+    - I am junior (to intermediate), still feeling pain
 * one value, you learn javascript and react, the language and typing
 * second value, directly prevents some errors (especially those hard to find)
 
@@ -35,7 +39,6 @@
 __NOTE:__ some packages (e.g. redux-form) provide __first class support for flow__. Flow types are automatically included with the package, typically in node_modules *.js.flow files. Note, if you ingore that folder in .flowconfig, those files will (or may) not read by flow.  Caveat, inlcuding node_modules can also generate a lot of flow errors. Need to figure this out.
 
 https://github.com/facebook/flow/issues/1548
-
 
 ## Resources
 
