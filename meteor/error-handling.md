@@ -28,6 +28,7 @@ For methods, if any Error other than a Meteor.Error is thrown, the method will s
 
 ## ValidationError
 * usage: when arguments are of wrong type, or form fields fail validation
+* details defintion: https://www.npmjs.com/package/simpl-schema#manually-adding-a-validation-error 
 
 ```
 constructor:
@@ -50,9 +51,9 @@ error fields:
     message?:"Validation failed [validation-error]",
     details: [
         {
-            name: string,            // required, "latitude"
-            value?: string,          // "not a number"
-            type: string,            // required, "expectedType"
+            name: string,            // required, schema key name (ie username)
+            value?: string,          // optional, the value that failed
+            type: string,    // required, SimpleSchema.ErrorTypes or any string
             dataType?: string,       // "Number"
             min?: number,
             max?: number,
