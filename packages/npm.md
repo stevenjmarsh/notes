@@ -19,3 +19,7 @@ Dependency with ^ prefix lock the major version and install the latest minor ver
 
 Without ~ and ^
 If no prefix is defined then the same version will be installed as defined.
+
+
+NOTE: a good description of how Meteor uses node, npm, and yarn...
+https://github.com/meteor/meteor/issues/8493
