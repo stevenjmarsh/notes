@@ -24,15 +24,20 @@
     - "3" === 3  (false)
     - true === 1 (false)
     - x = 2;   x === 2   (true)
-* Object comparison, ===  and Object.is() 
-    - object comparison, will return false, unless pointing to the exact same object (false even when to distinctly different objects contain the same values)
+* Object comparison: == , === , Object.is() 
+    - object comparison, will return false, unless pointing to the exact same object (false even when two distinctly different objects contain the same values)
         + let car1 = { color: 'blue', wheels: 4 }
         + let car2 = { color: 'blue', wheels: 4 }
         + let car3 = car1;
+        + car1 == car2;             // (false)
         + car1 === car2;            // (false)
         + Object.is(car1, car2);    // (false)
+        + car1 == car3;             // (true)
         + car1 === car3;            // (true)
         + Object.is(car1, car3);    // (true)
+* FYI, jest expect()
+    - .toBe()  uses "===" (is a strict comparison)
+    - .toEqual() does a deep value comparison  (recursively check equality of all fields)
 
 ## Assignment
 * when assigning a variable directly to an object, that variable references the source object 
