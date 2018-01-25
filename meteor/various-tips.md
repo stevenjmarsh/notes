@@ -11,5 +11,7 @@ Various tips to remember when running in to build or environmental issues.
     - https://forums.meteor.com/t/cordova-error-after-meteor-1-6-upgrade/40536/6
 
 I think the whole local directory can be deleted if needed.
+Note though, that does contain the app's db
+https://github.com/meteor/meteor/issues/5918
 
  
