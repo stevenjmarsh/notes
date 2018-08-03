@@ -2,6 +2,11 @@
 
 https://docs.mongodb.com/ecosystem/drivers/driver-compatibility-reference/#node-js-driver-compatibility
 
+#### Related
+* https://medium.freecodecamp.org/introduction-to-mongoose-for-mongodb-d2a7aa593c57
+* https://forums.meteor.com/t/mongoose-in-meteor/28269
+
+
 ## Useful mongodb commands
 * db.getCollectionNames();
 * db.collection.getIndexes();

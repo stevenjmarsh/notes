@@ -31,10 +31,19 @@
     - assigning a value simply assigns the value, and does not rerender (skips react lifecycle)
     - setState, updates the values of state and rerenders 
     - for the most part, you should always use setState, except when in setting intial state values in a constructor
+    - __NOTE: setState is asynchronous__
+        + you must exit the function you are calling it from, in order for react to be able to update state 
+        + e.g. if you call setState, then right after access state, state likely will not show the updated value
     - NOTES on this topic
         + http://stackoverflow.com/questions/34961853/what-will-happen-if-i-use-setstate-function-in-constructor-of-a-class-in-react
         + https://facebook.github.io/react/docs/component-api.html#setstate
         + http://stackoverflow.com/questions/35867038/what-the-difference-of-this-state-and-this-setstate-in-reactjs
+* reading values of state 
+    - be careful when trying to access state, setting state = to a local var will do so via reference
+        + e.g. `const formErrors = this.state.formErrors;`
+        + any change to formErrors will change this.state.formErrors!
+        + if you need a copy of the values, consider this manner
+            * const formErrors = { ...this.state.formErrors }
      
 ## Design Patterns
 ### Presentational Components
