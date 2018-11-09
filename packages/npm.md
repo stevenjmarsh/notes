@@ -42,3 +42,5 @@ NOTE: a good description of how Meteor uses node, npm, and yarn...
 https://github.com/meteor/meteor/issues/8493
 
 NOTE: blog post on node versions and Meteor 
+
+also: https://www.hostingadvice.com/how-to/update-npm-packages/
